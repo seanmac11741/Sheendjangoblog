@@ -95,6 +95,10 @@ gitignore from here https://github.com/github/gitignore/blob/master/Python.gitig
 heroku create sheendjangoblog   #to make the app
 create procfile web: gunicorn django_project.wsgi. This just tells heroku to use gunicorn
 good god i really messed up file structure when I started... should be fixed now
+to set Heroku env variables!!!!
+heroku config:set DEBUG_VALUE="True"
+dont forget to do that for aws stuff when you get there
+
 
 follow-up stuff
 bootstrap, does css and html for you, so nice... https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template
