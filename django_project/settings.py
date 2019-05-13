@@ -25,7 +25,7 @@ SECRET_KEY = '1)-8=u@(*(w^892mzc24vgp32@948z6&x7w^gm+zogl7lo##j0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sheendjangoblog.herokuapp.com']
 
 
 # Application definition
@@ -120,7 +120,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #add this line for heroku install 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #add this line for heroku install
 STATIC_URL = '/static/'
 
 #adding this for pillow to upload images and where they go

@@ -92,6 +92,7 @@ Part16 to store files and photos on AWS webbuckets. Can't do that on Heroku, the
 
 Part17 Deploy to Heroku! https://www.youtube.com/watch?v=6DI_7Zja8Zc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=17
 gitignore from here https://github.com/github/gitignore/blob/master/Python.gitignore
+heroku create sheendjangoblog   #to make the app
 create procfile web: gunicorn django_project.wsgi. This just tells heroku to use gunicorn
 good god i really messed up file structure when I started... should be fixed now
 
