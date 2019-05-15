@@ -98,6 +98,7 @@ good god i really messed up file structure when I started... should be fixed now
 to set Heroku env variables!!!!
 heroku config:set DEBUG_VALUE="True"
 dont forget to do that for aws stuff when you get there
+setup postgress on windows https://devcenter.heroku.com/articles/heroku-postgresql#set-up-postgres-on-windows
 
 
 follow-up stuff
