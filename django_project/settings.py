@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
 ALLOWED_HOSTS = ['sheendjangoblog.herokuapp.com']
 
@@ -147,4 +147,4 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
-django_heroku.settings(locals()) #sets lots of configurations automatically 
+django_heroku.settings(locals()) #sets lots of configurations automatically
