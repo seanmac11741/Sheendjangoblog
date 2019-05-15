@@ -1,3 +1,5 @@
+final website here https://sheendjangoblog.herokuapp.com/
+
 https://www.youtube.com/watch?v=UmljXZIypDc
 following this tutorial to create a django website
 mkvirtual env djangotutorialenv
@@ -88,7 +90,7 @@ email and password reset
 setting environ vars in windows https://www.youtube.com/watch?v=IolxqkL7cD8
 for whatever reason, the environ vars aren't working.... sad day... hardcoded for now, but def dont commit that!
 
-Part16 to store files and photos on AWS webbuckets. Can't do that on Heroku, they delete it
+Vid16 to store files and photos on AWS webbuckets. Can't do that on Heroku, they delete it
 
 Part17 Deploy to Heroku! https://www.youtube.com/watch?v=6DI_7Zja8Zc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=17
 gitignore from here https://github.com/github/gitignore/blob/master/Python.gitignore
@@ -99,7 +101,25 @@ to set Heroku env variables!!!!
 heroku config:set DEBUG_VALUE="True"
 dont forget to do that for aws stuff when you get there
 setup postgress on windows https://devcenter.heroku.com/articles/heroku-postgresql#set-up-postgres-on-windows
+heroku run bash     #this lets you run a bash session on heroku
+heroku releases     #this lets you see old releases and lets you rollback to them with
+heroku rollback v13
 
+it works! Live site here https://sheendjangoblog.herokuapp.com/
+
+Part13 https://www.youtube.com/watch?v=kt3ZtW9MXhw&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=16
+heroku doesn't let you use standard file system, must use S3, AWS web bucket stuffs
+bucket = sheen-django-blog-files
+heroku documentation on buckets https://devcenter.heroku.com/articles/s3-upload-python
+env vars to set in heroku: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_STORAGE_BUCKET_NAME = "sheen2-django-blog-files"
+
+need to pip install these for AWS buckets to work with django:
+pip install boto3
+pip install django-storages   #https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html
+
+very cool, all my buckets are here https://s3.console.aws.amazon.com/s3/home?region=us-east-1, you'll need login though
+now lets try and deploy those changes to heroku...
+update requirements.txt
 
 follow-up stuff
 bootstrap, does css and html for you, so nice... https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template
